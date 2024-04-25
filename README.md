@@ -1,3 +1,50 @@
+Abaixo, como usar o API:
+
+---
+
+### Endpoints
+
+**Show Users**
+- **Method:** `GET`
+- **URL:** [https://conecta-la-teste.pattyweb.com.br/public/api/users](https://conecta-la-teste.pattyweb.com.br/public/api/users)
+- **Description:** Retrieve all users.
+- **Response Example:**
+  ```json
+  {
+    "data": [
+      {
+        "id": 1,
+        "users": "Theo",
+        "created_at": "2024-04-25T03:03:48.000000Z",
+        "updated_at": "2024-04-25T03:03:48.000000Z"
+      }
+    ]
+  }
+  ```
+
+**Create User**
+- **Method:** `POST`
+- **URL:** [https://conecta-la-teste.pattyweb.com.br/public/api/users](https://conecta-la-teste.pattyweb.com.br/public/api/users)
+- **Description:** Create a new user.
+- **Request Example:**
+  ```json
+  {
+      "users" : "Theo"
+  }
+  ```
+
+**Delete User**
+- **Method:** `DELETE`
+- **URL:** [https://conecta-la-teste.pattyweb.com.br/public/api/users/{id}](https://conecta-la-teste.pattyweb.com.br/public/api/users/{id})
+- **Description:** Delete a user by ID.
+
+**Update User**
+- **Method:** `PUT`
+- **URL:** [https://conecta-la-teste.pattyweb.com.br/public/api/users/{id}](https://conecta-la-teste.pattyweb.com.br/public/api/users/{id})
+- **Description:** Update a user by ID.
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
